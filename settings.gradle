@@ -1,0 +1,2 @@
+include ':app', ':min14', ':min21', ':min26', ':min24', ':min17', ':min19', ':min23', ':min16', ':min28'
+rootProject.name='JetpackParty'

@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.jetpack.min14">
+
+    <application android:name="androidx.multidex.MultiDexApplication" />
+
+</manifest>

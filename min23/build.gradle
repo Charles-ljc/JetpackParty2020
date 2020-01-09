@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion compile_sdk_version
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion target_sdk_version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The Security library, part of Android Jetpack, provides an implementation of the security best practices
+    // related to reading and writing data at rest, as well as key creation and verification.
+    implementation "androidx.security:security-crypto:1.0.0-alpha02"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    implementation "androidx.wear:wear:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$testext_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+}

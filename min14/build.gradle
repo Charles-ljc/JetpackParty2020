@@ -1,0 +1,568 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion compile_sdk_version
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion target_sdk_version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.benchmark.junit4.AndroidBenchmarkRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    dataBinding.enabled = true
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    def activity_version = "1.0.0"
+    // Java language implementation
+    implementation "androidx.activity:activity:$activity_version"
+    // Kotlin
+    implementation "androidx.activity:activity-ktx:$activity_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The Advertising ID library defines an interface to interact with system-level ad providers across the devices running your app.
+    // This interface allows your app to receive consistent advertising ID values.
+    implementation 'androidx.ads:ads-identifier:1.0.0-alpha03'
+    implementation 'androidx.ads:ads-identifier-common:1.0.0-alpha03'
+    implementation 'androidx.ads:ads-identifier-provider:1.0.0-alpha02'
+    // Optional - add if you're using Guava to handle return values of type ListenableFuture.
+    implementation 'com.google.guava:guava:28.0-android'
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    implementation "androidx.annotation:annotation:1.1.0"
+    // To use the Java-compatible @Experimental API annotation
+    implementation "androidx.annotation:annotation-experimental:1.0.0"
+    implementation "androidx.annotation:annotation-experimental-lint:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    def appcompat_version = "1.1.0"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    // For loading and tinting drawables on older versions of the platform
+    implementation "androidx.appcompat:appcompat-resources:$appcompat_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    def arch_version = "2.1.0"
+    implementation "androidx.arch.core:core-common:$arch_version"
+    implementation "androidx.arch.core:core-runtime:$arch_version"
+    implementation "androidx.arch.core:core-testing:$arch_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Helper class for inflating layouts asynchronously.
+    implementation "androidx.asynclayoutinflater:asynclayoutinflater:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // It provides new autofill hint constants added to allow more granular annotation of form fields.
+    implementation "androidx.autofill:autofill:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The Benchmark library makes it easy to benchmark your Kotlin-based or Java-based code from within Android Studio.
+    // The library handles warmup, measures your code performance, and outputs benchmarking results to the Android Studio console.
+    def benchmark_version = "1.0.0"
+    androidTestImplementation "androidx.benchmark:benchmark-junit4:$benchmark_version"
+    androidTestImplementation "androidx.benchmark:benchmark-common:$benchmark_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // 生物统计
+    implementation "androidx.biometric:biometric:1.0.1"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // A FrameLayout with a rounded corner background and shadow.
+    implementation "androidx.cardview:cardview:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    def collection_version = "1.1.0"
+    // Java language implementation
+    implementation "androidx.collection:collection:$collection_version"
+    // Kotlin
+    implementation "androidx.collection:collection-ktx:$collection_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    implementation "androidx.concurrent:concurrent-futures:1.0.0"
+    // Kotlin
+    implementation "androidx.concurrent:concurrent-futures-ktx:1.1.0-alpha01"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // ContentPager provides support for loading "paged" data on a background thread using the ContentResolver framework.
+    implementation "androidx.contentpager:contentpager:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // CoordinatorLayout is a super-powered FrameLayout.
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    def core_version = "1.1.0"
+    // Java language implementation
+    implementation "androidx.core:core:$core_version"
+    // Kotlin
+    implementation "androidx.core:core-ktx:$core_version"
+    // To use RoleManagerCompat
+    // This class contains the name and documentation for roles that might be available in the system.
+    implementation "androidx.core:core-role:1.0.0-beta01"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Static library support version of the framework's CursorAdapter.
+    implementation "androidx.cursoradapter:cursoradapter:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    implementation "androidx.customview:customview:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    //android {
+    //    ...
+    //    dataBinding {
+    //        enabled = true
+    //    }
+    //}
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Representation of a document backed by either a DocumentsProvider or a raw file on disk.
+    implementation "androidx.documentfile:documentfile:1.0.1"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // DrawerLayout acts as a top-level container for window content that allows for interactive "drawer" views to be pulled out from one or both vertical edges of the window.
+    implementation "androidx.drawerlayout:drawerlayout:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // This class is the base class of physics-based animations.
+    // Java language implementation
+    implementation "androidx.dynamicanimation:dynamicanimation:1.0.0"
+    // Kotlin
+    implementation "androidx.dynamicanimation:dynamicanimation-ktx:1.0.0-alpha03"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    def emoji_version = "1.0.0"
+    implementation "androidx.emoji:emoji:$emoji_version"
+    implementation "androidx.emoji:emoji-appcompat:$emoji_version"
+    implementation "androidx.emoji:emoji-bundled:$emoji_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // This is a class for reading and writing Exif tags in various image file formats.
+    implementation "androidx.exifinterface:exifinterface:1.1.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Static library support version of the framework's Fragment.
+    def fragment_version = "1.1.0"
+    // Java language implementation
+    implementation "androidx.fragment:fragment:$fragment_version"
+    // Kotlin
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    // Testing Fragments in Isolation
+    implementation "androidx.fragment:fragment-testing:$fragment_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // A layout that places its children in a rectangular grid.
+    implementation "androidx.gridlayout:gridlayout:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    implementation "androidx.interpolator:interpolator:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // legacy deprecated
+    def legacy_version = "1.0.0"
+    implementation "androidx.legacy:legacy-preference-v14:$legacy_version"
+    implementation "androidx.legacy:legacy-support-v13:$legacy_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Lifecycle-aware components perform actions in response to a change in the lifecycle status of another component, such as activities and fragments.
+    // These components help you produce better-organized, and often lighter-weight code, that is easier to maintain.
+    def lifecycle_version = "2.1.0"
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    // alternatively - just ViewModel
+    // For Kotlin use lifecycle-viewmodel-ktx
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc03"
+    // alternatively - just LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-core-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // alternatively - Lifecycles only (no ViewModel or LiveData). Some UI AndroidX libraries use this lightweight import for Lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-rc03"
+    // For Kotlin use kapt instead of annotationProcessor
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    // alternately - if using Java8, use the following instead of lifecycle-compiler
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+    // optional - ReactiveStreams support for LiveData
+    // For Kotlin use lifecycle-reactivestreams-ktx
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version"
+    // optional - Test helpers for LiveData
+    testImplementation "androidx.arch.core:core-testing:$lifecycle_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Static library support version of the framework's LoaderManager.
+    implementation "androidx.loader:loader:1.1.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // deprecated
+    // You can replace usage of LocalBroadcastManager with other implementations of the observable pattern.
+    // Depending on your use case, suitable options may be LiveData or reactive streams.
+    implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    implementation "androidx.media:media:1.1.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // MediaRouter allows applications to control the routing of media channels and streams from the current device to external speakers and destination devices.
+    implementation "androidx.mediarouter:mediarouter:1.1.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    implementation "androidx.multidex:multidex:2.0.1"
+    // deprecated
+    implementation "androidx.multidex:multidex-instrumentation:2.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Navigation is a framework for navigating between 'destinations' within an Android application
+    // that provides a consistent API whether destinations are implemented as Fragments, Activities, or other components.
+    def nav_version = "2.1.0"
+    // Java language implementation
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+    // Kotlin
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The Paging Library makes it easier for you to load data gradually and gracefully within your app's RecyclerView.
+    def paging_version = "2.1.1"
+    // For Kotlin use paging-runtime-ktx
+    implementation "androidx.paging:paging-runtime:$paging_version"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+    // alternatively - without Android dependencies for testing
+    // For Kotlin use paging-common-ktx
+    testImplementation "androidx.paging:paging-common:$paging_version"
+    testImplementation "androidx.paging:paging-common-ktx:$paging_version"
+    // optional - RxJava support
+    // For Kotlin use paging-rxjava2-ktx
+    implementation "androidx.paging:paging-rxjava2:$paging_version"
+    implementation "androidx.paging:paging-rxjava2-ktx:$paging_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // A helper class to extract prominent colors from an image.
+    def palette_version = "1.0.0"
+    implementation "androidx.palette:palette:$palette_version"
+    implementation "androidx.palette:palette-ktx:$palette_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // deprecated
+    // consider using ConstraintLayout and associated layouts instead.
+    implementation "androidx.percentlayout:percentlayout:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The Preference library allows you to build interactive settings screens,
+    // without needing to handle interacting with device storage or managing the user interface.
+    def preference_version = "1.1.0"
+    // Java language implementation
+    implementation "androidx.preference:preference:$preference_version"
+    // Kotlin
+    implementation "androidx.preference:preference-ktx:$preference_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Helper for printing bitmaps.
+    implementation "androidx.print:print:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // A flexible view for providing a limited window into a large data set.
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0-beta01"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Remote Callback is a new library aimed at making generating and receiving PendingIntents easier.
+    def remote_version = "1.0.0-alpha02"
+    implementation "androidx.remotecallback:remotecallback:$remote_version"
+    annotationProcessor "androidx.remotecallback:remotecallback-processor:$remote_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
+    def room_version = "2.2.3"
+    implementation "androidx.room:room-runtime:$room_version"
+    // For Kotlin use kapt instead of annotationProcessor
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation "androidx.room:room-guava:$room_version"
+    // Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // This is a set of APIs that allow developers to plugin components into the restore / saveInstanceState process.
+    implementation "androidx.savedstate:savedstate:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // This module provides backwards compatibility for publishing direct share targets on pre-Q Android versions.
+    // None of the APIs in this module are meant to be used directly by the app, but when imported as a dependency,
+    // will add extra background functionality to ShortcutManagerCompat in the androidx.core module.
+    implementation "androidx.sharetarget:sharetarget:1.0.0-rc01"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // A slice is a piece of app content and actions that can be surfaced outside of the app.
+    def slice_version = "1.0.0"
+    implementation "androidx.slice:slice-view:$slice_version"
+    implementation "androidx.slice:slice-builders:$slice_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // SlidingPaneLayout provides a horizontal, multi-pane layout for use at the top level of a UI.
+    implementation "androidx.slidingpanelayout:slidingpanelayout:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The androidx.sqlite library contains abstract interfaces along with basic implementations which can be used to build your own libraries that access SQLite.
+    def sqlite_version = "2.0.1"
+    // Java language implementation
+    implementation "androidx.sqlite:sqlite:$sqlite_version"
+    // Kotlin
+    implementation "androidx.sqlite:sqlite-ktx:$sqlite_version"
+    // Implementation of the AndroidX SQLite interfaces via the Android framework APIs.
+    implementation "androidx.sqlite:sqlite-framework:$sqlite_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The SwipeRefreshLayout should be used whenever the user can refresh the contents of a view via a vertical swipe gesture.
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    def test_version = "1.2.0"
+    testImplementation "androidx.test:core:$test_version"
+    testImplementation "androidx.test:core-ktx:$test_version"
+    testImplementation "androidx.test:monitor:$test_version"
+    testImplementation "androidx.test:orchestrator:$test_version"
+    testImplementation "androidx.test:rules:$test_version"
+    testImplementation "androidx.test:runner:$test_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // root build.gradle define
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-accessibility:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-remote:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-web:$espresso_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    def espressoidling_version = "3.2.0"
+    androidTestImplementation "androidx.test.espresso.idling:idling-concurrent:$espressoidling_version"
+    androidTestImplementation "androidx.test.espresso.idling:idling-net:$espressoidling_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // root build.gradle define
+    androidTestImplementation "androidx.test.ext:junit:$testext_version"
+    androidTestImplementation "androidx.test.ext:junit-ktx:$testext_version"
+    androidTestImplementation "androidx.test.ext:truth:1.2.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    androidTestImplementation "androidx.test.janktesthelper:janktesthelper:1.0.1"
+    androidTestImplementation "androidx.test.janktesthelper:janktesthelper-v23:1.0.1-alpha1"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    androidTestImplementation "androidx.test.services:test-services:1.2.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    androidTestImplementation "androidx.test.uiautomator:uiautomator:2.2.0"
+    androidTestImplementation "androidx.test.uiautomator:uiautomator-v18:2.2.0-alpha1"
+    //
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Interface for providing text classification related features.
+    implementation "androidx.textclassifier:textclassifier:1.0.0-alpha02"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // AndroidX Transition Library provides Transition API back to API level 14.
+    implementation "androidx.transition:transition:1.2.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    def vectordrawable_version = "1.1.0"
+    implementation "androidx.vectordrawable:vectordrawable:$vectordrawable_version"
+    /* To be able to animate properties of a VectorDrawable, add the following.  Useful for
+     * illustration purposes or state changes in response to user events
+     */
+    implementation "androidx.vectordrawable:vectordrawable-animated:$vectordrawable_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    implementation "androidx.versionedparcelable:versionedparcelable:1.1.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // Layout manager that allows the user to flip left and right through pages of data.
+    implementation "androidx.viewpager:viewpager:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // ViewPager2 replaces ViewPager, addressing most of its predecessor’s pain-points,
+    // including right-to-left layout support, vertical orientation, modifiable Fragment collections, etc.
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The androidx.webkit library is a static library you can add to your Android application
+    // in order to use android.webkit APIs that are not available for older platform versions.
+    implementation "androidx.webkit:webkit:1.1.0"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    // ——————————————————————————————————————————————————————————————————————
+    // The WorkManager API makes it easy to schedule deferrable, asynchronous tasks that must be run reliably .
+    // These APIs let you create a task and hand it off to WorkManager to run when the work constraints are met.
+    def work_version = "2.2.0"
+    // (Java only)
+    implementation "androidx.work:work-runtime:$work_version"
+    // Kotlin + coroutines
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+    // optional - RxJava2 support
+    implementation "androidx.work:work-rxjava2:$work_version"
+    // optional - GCMNetworkManager support
+    implementation "androidx.work:work-gcm:$work_version"
+    // optional - Test helpers
+    androidTestImplementation "androidx.work:work-testing:$work_version"
+    // ——————————————————————————————————————————————————————————————————————
+
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$testext_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+}

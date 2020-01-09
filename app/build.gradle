@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion compile_sdk_version
+
+    defaultConfig {
+        applicationId "com.android.jetpack"
+        targetSdkVersion target_sdk_version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    flavorDimensions "minSdk"
+    productFlavors {
+        min14 {
+            dimension "minSdk"
+            minSdkVersion 14
+            multiDexEnabled true
+            buildToolsVersion = '29.0.2'
+            compileOptions {
+                sourceCompatibility = 1.8
+                targetCompatibility = 1.8
+            }
+        }
+        min16 {
+            dimension "minSdk"
+            minSdkVersion 16
+        }
+        min17 {
+            dimension "minSdk"
+            minSdkVersion 17
+        }
+        min19 {
+            dimension "minSdk"
+            minSdkVersion 19
+        }
+        min21 {
+            dimension "minSdk"
+            minSdkVersion 21
+        }
+        min23 {
+            dimension "minSdk"
+            minSdkVersion 23
+        }
+        min24 {
+            dimension "minSdk"
+            minSdkVersion 24
+        }
+        min26 {
+            dimension "minSdk"
+            minSdkVersion 26
+        }
+        min28 {
+            dimension "minSdk"
+            minSdkVersion 28
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+        min14Implementation project(path: ':min14')
+        min16Implementation project(path: ':min16')
+        min17Implementation project(path: ':min17')
+        min19Implementation project(path: ':min19')
+        min21Implementation project(path: ':min21')
+        min23Implementation project(path: ':min23')
+        min24Implementation project(path: ':min24')
+        min26Implementation project(path: ':min26')
+        min28Implementation project(path: ':min28')
+
+        testImplementation "junit:junit:$junit_version"
+        androidTestImplementation "androidx.test.ext:junit:$testext_version"
+        androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    }
+
+}
