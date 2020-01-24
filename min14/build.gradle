@@ -30,7 +30,7 @@ dependencies {
 
 
     // ——————————————————————————————————————————————————————————————————————
-    def activity_version = "1.0.0"
+    def activity_version = "1.1.0"
     // Java language implementation
     implementation "androidx.activity:activity:$activity_version"
     // Kotlin
@@ -209,7 +209,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // Static library support version of the framework's Fragment.
-    def fragment_version = "1.1.0"
+    def fragment_version = "1.2.0"
     // Java language implementation
     implementation "androidx.fragment:fragment:$fragment_version"
     // Kotlin
@@ -241,21 +241,24 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     // Lifecycle-aware components perform actions in response to a change in the lifecycle status of another component, such as activities and fragments.
     // These components help you produce better-organized, and often lighter-weight code, that is easier to maintain.
-    def lifecycle_version = "2.1.0"
+    def lifecycle_version = "2.2.0"
     // ViewModel and LiveData
-    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    // extensions deprecation https://developer.android.com/jetpack/androidx/releases/lifecycle#2.2.0
+    // implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-service:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
     // alternatively - just ViewModel
     // For Kotlin use lifecycle-viewmodel-ktx
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc03"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0"
     // alternatively - just LiveData
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-core-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
     // alternatively - Lifecycles only (no ViewModel or LiveData). Some UI AndroidX libraries use this lightweight import for Lifecycle
     implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-rc03"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
     // For Kotlin use kapt instead of annotationProcessor
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
     // alternately - if using Java8, use the following instead of lifecycle-compiler
@@ -265,7 +268,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version"
     // optional - Test helpers for LiveData
-    testImplementation "androidx.arch.core:core-testing:$lifecycle_version"
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
     // ——————————————————————————————————————————————————————————————————————
 
 
@@ -304,7 +307,7 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     // Navigation is a framework for navigating between 'destinations' within an Android application
     // that provides a consistent API whether destinations are implemented as Fragments, Activities, or other components.
-    def nav_version = "2.1.0"
+    def nav_version = "2.2.0"
     // Java language implementation
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
@@ -426,7 +429,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // The androidx.sqlite library contains abstract interfaces along with basic implementations which can be used to build your own libraries that access SQLite.
-    def sqlite_version = "2.0.1"
+    def sqlite_version = "2.1.0"
     // Java language implementation
     implementation "androidx.sqlite:sqlite:$sqlite_version"
     // Kotlin
@@ -504,7 +507,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // AndroidX Transition Library provides Transition API back to API level 14.
-    implementation "androidx.transition:transition:1.2.0"
+    implementation "androidx.transition:transition:1.3.0"
     // ——————————————————————————————————————————————————————————————————————
 
 
@@ -546,7 +549,7 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     // The WorkManager API makes it easy to schedule deferrable, asynchronous tasks that must be run reliably .
     // These APIs let you create a task and hand it off to WorkManager to run when the work constraints are met.
-    def work_version = "2.2.0"
+    def work_version = "2.3.0"
     // (Java only)
     implementation "androidx.work:work-runtime:$work_version"
     // Kotlin + coroutines
