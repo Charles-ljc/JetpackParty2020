@@ -28,7 +28,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // Media2 is the next generation of following Media APIs: MediaSession, MediaController, MediaBrowser, MediaBrowserService, VideoView, and MediaControlView.
-    def media2_version = "1.0.1"
+    def media2_version = "1.0.2"
     // Interacting with MediaSessions
     implementation "androidx.media2:media2-session:$media2_version"
     // optional - UI widgets for VideoView and MediaControlView

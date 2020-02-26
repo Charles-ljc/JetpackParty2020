@@ -140,7 +140,7 @@ dependencies {
 
 
     // ——————————————————————————————————————————————————————————————————————
-    def core_version = "1.1.0"
+    def core_version = "1.2.0"
     // Java language implementation
     implementation "androidx.core:core:$core_version"
     // Kotlin
@@ -209,7 +209,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // Static library support version of the framework's Fragment.
-    def fragment_version = "1.2.0"
+    def fragment_version = "1.2.1"
     // Java language implementation
     implementation "androidx.fragment:fragment:$fragment_version"
     // Kotlin
@@ -251,7 +251,7 @@ dependencies {
     // For Kotlin use lifecycle-viewmodel-ktx
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
     // alternatively - just LiveData
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-livedata-core-ktx:$lifecycle_version"
@@ -307,7 +307,7 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     // Navigation is a framework for navigating between 'destinations' within an Android application
     // that provides a consistent API whether destinations are implemented as Fragments, Activities, or other components.
-    def nav_version = "2.2.0"
+    def nav_version = "2.2.1"
     // Java language implementation
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
@@ -549,7 +549,7 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     // The WorkManager API makes it easy to schedule deferrable, asynchronous tasks that must be run reliably .
     // These APIs let you create a task and hand it off to WorkManager to run when the work constraints are met.
-    def work_version = "2.3.0"
+    def work_version = "2.3.1"
     // (Java only)
     implementation "androidx.work:work-runtime:$work_version"
     // Kotlin + coroutines

@@ -11,6 +11,14 @@ https://maven.google.com/web/index.html
 
 # ChangeLog
 
+## 2020-02-05
+1. Core 1.2.0
+2. Fragment 1.2.1
+3. Lifecycle ViewModel SavedState 2.2.0
+4. Media2 1.0.2
+5. Navigation 2.2.1
+6. WorkManager 2.3.1
+
 ## 2020-01-22
 1. Activity 1.1.0
 2. Fragment 1.2.0
