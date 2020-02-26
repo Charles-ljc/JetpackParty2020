@@ -11,6 +11,13 @@ https://maven.google.com/web/index.html
 
 # ChangeLog
 
+## 2020-02-19
+1. Fragment 1.2.2
+2. Media2 1.0.3
+3. Room 2.2.4
+4. Transition 1.3.1
+5. Work 2.3.2
+
 ## 2020-02-05
 1. Core 1.2.0
 2. Fragment 1.2.1
