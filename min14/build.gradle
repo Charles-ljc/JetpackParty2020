@@ -542,14 +542,14 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     // The androidx.webkit library is a static library you can add to your Android application
     // in order to use android.webkit APIs that are not available for older platform versions.
-    implementation "androidx.webkit:webkit:1.1.0"
+    implementation "androidx.webkit:webkit:1.2.0"
     // ——————————————————————————————————————————————————————————————————————
 
 
     // ——————————————————————————————————————————————————————————————————————
     // The WorkManager API makes it easy to schedule deferrable, asynchronous tasks that must be run reliably .
     // These APIs let you create a task and hand it off to WorkManager to run when the work constraints are met.
-    def work_version = "2.3.2"
+    def work_version = "2.3.3"
     // (Java only)
     implementation "androidx.work:work-runtime:$work_version"
     // Kotlin + coroutines

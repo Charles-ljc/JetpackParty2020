@@ -1,4 +1,8 @@
 
+## 2020-03-04
+1. Webkit Version 1.2.0
+2. WorkManager Version 2.3.3
+
 ## 2020-02-19
 1. Fragment 1.2.2
 2. Media2 1.0.3
