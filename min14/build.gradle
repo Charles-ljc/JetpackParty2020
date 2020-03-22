@@ -209,7 +209,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // Static library support version of the framework's Fragment.
-    def fragment_version = "1.2.2"
+    def fragment_version = "1.2.3"
     // Java language implementation
     implementation "androidx.fragment:fragment:$fragment_version"
     // Kotlin
@@ -319,7 +319,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // The Paging Library makes it easier for you to load data gradually and gracefully within your app's RecyclerView.
-    def paging_version = "2.1.1"
+    def paging_version = "2.1.2"
     // For Kotlin use paging-runtime-ktx
     implementation "androidx.paging:paging-runtime:$paging_version"
     implementation "androidx.paging:paging-runtime-ktx:$paging_version"
@@ -384,7 +384,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
-    def room_version = "2.2.4"
+    def room_version = "2.2.5"
     implementation "androidx.room:room-runtime:$room_version"
     // For Kotlin use kapt instead of annotationProcessor
     annotationProcessor "androidx.room:room-compiler:$room_version"
@@ -549,7 +549,7 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     // The WorkManager API makes it easy to schedule deferrable, asynchronous tasks that must be run reliably .
     // These APIs let you create a task and hand it off to WorkManager to run when the work constraints are met.
-    def work_version = "2.3.3"
+    def work_version = "2.3.4"
     // (Java only)
     implementation "androidx.work:work-runtime:$work_version"
     // Kotlin + coroutines

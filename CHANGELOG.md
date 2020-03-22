@@ -1,4 +1,10 @@
 
+## 2020-03-18
+1. Fragment Version 1.2.3
+2. Paging Version 2.1.2
+3. Room Version 2.2.5
+4. WorkManager Version 2.3.4
+
 ## 2020-03-04
 1. Webkit Version 1.2.0
 2. WorkManager Version 2.3.3
