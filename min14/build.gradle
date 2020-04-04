@@ -203,13 +203,13 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // This is a class for reading and writing Exif tags in various image file formats.
-    implementation "androidx.exifinterface:exifinterface:1.1.0"
+    implementation "androidx.exifinterface:exifinterface:1.2.0"
     // ——————————————————————————————————————————————————————————————————————
 
 
     // ——————————————————————————————————————————————————————————————————————
     // Static library support version of the framework's Fragment.
-    def fragment_version = "1.2.3"
+    def fragment_version = "1.2.4"
     // Java language implementation
     implementation "androidx.fragment:fragment:$fragment_version"
     // Kotlin

@@ -1,4 +1,8 @@
 
+## 2020-04-01
+1. ExifInterface Version 1.2.0
+2. Fragment Version 1.2.4
+
 ## 2020-03-18
 1. Fragment Version 1.2.3
 2. Paging Version 2.1.2
