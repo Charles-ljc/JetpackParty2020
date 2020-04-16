@@ -1,4 +1,9 @@
 
+## 2020-04-15
+1. Navigation Version 2.2.2
+2. Preference Version 1.1.1
+3. Versionedparcelable Version 1.1.1
+
 ## 2020-04-01
 1. ExifInterface Version 1.2.0
 2. Fragment Version 1.2.4
