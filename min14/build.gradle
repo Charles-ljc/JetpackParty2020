@@ -406,10 +406,10 @@ dependencies {
 
 
     // ——————————————————————————————————————————————————————————————————————
-    // This module provides backwards compatibility for publishing direct share targets on pre-Q Android versions.
-    // None of the APIs in this module are meant to be used directly by the app, but when imported as a dependency,
-    // will add extra background functionality to ShortcutManagerCompat in the androidx.core module.
-    implementation "androidx.sharetarget:sharetarget:1.0.0-rc01"
+    // ShareTarget module provides backward compatibility for providing share targets which are shown in the platform's ShareSheet.
+    // This module does not have any public APIs, and apps do not need to directly interact with this module.
+    // Instead, ShortcutManagerCompat internally uses this as a utility library when needed.
+    implementation "androidx.sharetarget:sharetarget:1.0.0"
     // ——————————————————————————————————————————————————————————————————————
 
 

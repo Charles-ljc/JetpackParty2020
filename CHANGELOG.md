@@ -1,4 +1,7 @@
 
+## 2020-05-14
+1. ShareTarget Version 1.0.0
+
 ## 2020-04-15
 1. Navigation Version 2.2.2
 2. Preference Version 1.1.1
