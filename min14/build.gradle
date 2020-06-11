@@ -15,7 +15,10 @@ android {
         consumerProguardFiles 'consumer-rules.pro'
     }
 
-    dataBinding.enabled = true
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
 
     buildTypes {
         release {
@@ -165,8 +168,9 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     //android {
     //    ...
-    //    dataBinding {
-    //        enabled = true
+    //    buildFeatures {
+    //        dataBinding = true
+    //        viewBinding = true
     //    }
     //}
     // ——————————————————————————————————————————————————————————————————————
