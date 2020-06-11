@@ -1,4 +1,7 @@
 
+## 2020-05-27
+1. Core Version 1.3.0
+
 ## 2020-05-14
 1. ShareTarget Version 1.0.0
 
