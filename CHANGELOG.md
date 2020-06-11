@@ -1,4 +1,7 @@
 
+## 2020-06-10
+1. Fragment Version 1.2.5
+
 ## 2020-05-27
 1. Core Version 1.3.0
 
