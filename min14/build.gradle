@@ -161,7 +161,7 @@ dependencies {
 
 
     // ——————————————————————————————————————————————————————————————————————
-    implementation "androidx.customview:customview:1.0.0"
+    implementation "androidx.customview:customview:1.1.0"
     // ——————————————————————————————————————————————————————————————————————
 
 
@@ -184,7 +184,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // DrawerLayout acts as a top-level container for window content that allows for interactive "drawer" views to be pulled out from one or both vertical edges of the window.
-    implementation "androidx.drawerlayout:drawerlayout:1.0.0"
+    implementation "androidx.drawerlayout:drawerlayout:1.1.0"
     // ——————————————————————————————————————————————————————————————————————
 
 
@@ -198,7 +198,7 @@ dependencies {
 
 
     // ——————————————————————————————————————————————————————————————————————
-    def emoji_version = "1.0.0"
+    def emoji_version = "1.1.0"
     implementation "androidx.emoji:emoji:$emoji_version"
     implementation "androidx.emoji:emoji-appcompat:$emoji_version"
     implementation "androidx.emoji:emoji-bundled:$emoji_version"
@@ -311,13 +311,17 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     // Navigation is a framework for navigating between 'destinations' within an Android application
     // that provides a consistent API whether destinations are implemented as Fragments, Activities, or other components.
-    def nav_version = "2.2.2"
+    def nav_version = "2.3.0"
     // Java language implementation
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
     // Kotlin
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    // Dynamic Feature Module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
     // ——————————————————————————————————————————————————————————————————————
 
 
@@ -427,7 +431,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // SlidingPaneLayout provides a horizontal, multi-pane layout for use at the top level of a UI.
-    implementation "androidx.slidingpanelayout:slidingpanelayout:1.0.0"
+    implementation "androidx.slidingpanelayout:slidingpanelayout:1.1.0"
     // ——————————————————————————————————————————————————————————————————————
 
 
@@ -445,7 +449,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // The SwipeRefreshLayout should be used whenever the user can refresh the contents of a view via a vertical swipe gesture.
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     // ——————————————————————————————————————————————————————————————————————
 
 

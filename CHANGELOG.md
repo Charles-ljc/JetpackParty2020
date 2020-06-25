@@ -1,4 +1,12 @@
 
+## 2020-06-24
+1. CustomView Version 1.1.0
+2. DrawerLayout Version 1.1.0
+3. Emoji Version 1.1.0
+4. Navigation Version 2.3.0
+5. SlidingPaneLayout Version 1.1.0
+6. SwipeRefreshLayout Version 1.1.0
+
 ## 2020-06-10
 1. Fragment Version 1.2.5
 
