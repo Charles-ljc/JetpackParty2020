@@ -1,4 +1,8 @@
 
+## 2020-07-22
+1. Core Version 1.3.1
+2. WorkManager Version 2.4.0
+
 ## 2020-06-24
 1. CustomView Version 1.1.0
 2. DrawerLayout Version 1.1.0
