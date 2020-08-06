@@ -1,4 +1,7 @@
 
+## 2020-08-05
+1. AppCompat Version 1.2.0
+
 ## 2020-07-22
 1. Core Version 1.3.1
 2. WorkManager Version 2.4.0
