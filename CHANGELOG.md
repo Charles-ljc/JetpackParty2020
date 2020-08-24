@@ -1,4 +1,7 @@
 
+## 2020-08-21
+1. ConstraintLayout 2.0.0
+
 ## 2020-08-19
 1. Concurrent Version 1.1.0
 2. Webkit Version 1.3.0
