@@ -1,4 +1,7 @@
 
+## 2020-09-02
+1. DrawerLayout Version 1.1.1
+
 ## 2020-08-25
 1. Test Version 1.3.0
 
