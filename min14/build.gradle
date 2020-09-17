@@ -207,8 +207,8 @@ dependencies {
 
 
     // ——————————————————————————————————————————————————————————————————————
-    // This is a class for reading and writing Exif tags in various image file formats.
-    implementation "androidx.exifinterface:exifinterface:1.2.0"
+    // Read and write image file EXIF tags.
+    implementation "androidx.exifinterface:exifinterface:1.3.0"
     // ——————————————————————————————————————————————————————————————————————
 
 
@@ -292,7 +292,8 @@ dependencies {
 
 
     // ——————————————————————————————————————————————————————————————————————
-    implementation "androidx.media:media:1.1.0"
+    // Share media contents and controls with other apps. Superseded by media2.
+    implementation "androidx.media:media:1.2.0"
     // ——————————————————————————————————————————————————————————————————————
 
 

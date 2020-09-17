@@ -1,4 +1,8 @@
 
+## 2020-09-16
+1. Exifinterface Version 1.3.0
+2. Media Version 1.2.0
+
 ## 2020-09-02
 1. DrawerLayout Version 1.1.1
 
