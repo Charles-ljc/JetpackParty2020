@@ -68,7 +68,6 @@ android {
 
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
-        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
         min14Implementation project(path: ':min14')
         min16Implementation project(path: ':min16')
