@@ -127,7 +127,8 @@ dependencies {
 
 
     // ——————————————————————————————————————————————————————————————————————
-    implementation "androidx.constraintlayout:constraintlayout:2.0.0"
+    // Position and size widgets in a flexible way with relative positioning.
+    implementation "androidx.constraintlayout:constraintlayout:2.0.2"
     // ——————————————————————————————————————————————————————————————————————
 
 

@@ -1,4 +1,7 @@
 
+## 2020-10-06
+1. ConstraintLayout 2.0.2
+
 ## 2020-10-01
 1. Core Core-Ktx Version 1.3.2
 
