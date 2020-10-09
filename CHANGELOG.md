@@ -1,4 +1,7 @@
 
+## 2020-10-01
+1. Core Core-Ktx Version 1.3.2
+
 ## 2020-09-16
 1. Exifinterface Version 1.3.0
 2. Media Version 1.2.0
