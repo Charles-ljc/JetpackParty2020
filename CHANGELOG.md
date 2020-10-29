@@ -1,4 +1,7 @@
 
+## 2020-10-27
+1. ConstraintLayout 2.0.3
+
 ## 2020-10-14
 1. Exifinterface Version 1.3.1
 2. Mediarouter Version 1.2.0
