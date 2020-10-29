@@ -450,6 +450,10 @@ dependencies {
     implementation "androidx.sqlite:sqlite-framework:$sqlite_version"
     // ——————————————————————————————————————————————————————————————————————
 
+    // ——————————————————————————————————————————————————————————————————————
+    // Implement a straightforward, performant way to initialize components at app startup.
+    implementation "androidx.startup:startup-runtime:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
 
     // ——————————————————————————————————————————————————————————————————————
     // The SwipeRefreshLayout should be used whenever the user can refresh the contents of a view via a vertical swipe gesture.
@@ -511,6 +515,10 @@ dependencies {
     implementation "androidx.textclassifier:textclassifier:1.0.0-alpha02"
     // ——————————————————————————————————————————————————————————————————————
 
+    // ——————————————————————————————————————————————————————————————————————
+    // Write trace events to the system trace buffer.
+    implementation "androidx.tracing:tracing:1.0.0"
+    // ——————————————————————————————————————————————————————————————————————
 
     // ——————————————————————————————————————————————————————————————————————
     // AndroidX Transition Library provides Transition API back to API level 14.

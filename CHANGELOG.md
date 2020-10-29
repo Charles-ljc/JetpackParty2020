@@ -1,4 +1,8 @@
 
+## 2020-10-28
+1. Startup Version 1.0.0
+2. Tracing Version 1.0.0
+
 ## 2020-10-27
 1. ConstraintLayout 2.0.3
 
