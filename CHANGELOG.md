@@ -1,4 +1,12 @@
 
+## 2020-12-02
+1. Browser Version 1.3.0
+2. Exifinterface Version 1.3.2
+3. Media Version 1.2.1
+4. Media2 Version 1.1.0
+5. Navigation Version 2.3.2
+6. Wear-Input Version 1.0.0
+
 ## 2020-10-29
 1. ConstraintLayout 2.0.4
 

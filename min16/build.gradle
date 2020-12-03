@@ -27,7 +27,8 @@ dependencies {
 
 
     // ——————————————————————————————————————————————————————————————————————
-    implementation "androidx.browser:browser:1.2.0"
+    // Display webpages in the user's default browser.
+    implementation "androidx.browser:browser:1.3.0"
     // ——————————————————————————————————————————————————————————————————————
 
 
