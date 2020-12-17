@@ -396,7 +396,7 @@ dependencies {
 
     // ——————————————————————————————————————————————————————————————————————
     // The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
-    def room_version = "2.2.5"
+    def room_version = "2.2.6"
     implementation "androidx.room:room-runtime:$room_version"
     // For Kotlin use kapt instead of annotationProcessor
     annotationProcessor "androidx.room:room-compiler:$room_version"
@@ -557,7 +557,7 @@ dependencies {
     // ——————————————————————————————————————————————————————————————————————
     // The androidx.webkit library is a static library you can add to your Android application
     // in order to use android.webkit APIs that are not available for older platform versions.
-    implementation "androidx.webkit:webkit:1.3.0"
+    implementation "androidx.webkit:webkit:1.4.0"
     // ——————————————————————————————————————————————————————————————————————
 
 

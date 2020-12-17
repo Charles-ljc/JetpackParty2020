@@ -1,4 +1,9 @@
 
+## 2020-12-16
+1. Media2 Version 1.1.1
+2. Room Version 2.2.6
+3. Webkit Version 1.4.0
+
 ## 2020-12-02
 1. Browser Version 1.3.0
 2. Exifinterface Version 1.3.2
